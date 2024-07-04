@@ -127,6 +127,51 @@ button {
   /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
 }
 
+/* Add your existing styles here */
+
+/* Add your existing styles here */
+
+.hero {
+  transition: filter 0.3s ease;
+}
+
+.message-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.message-content p {
+  margin: 0 0 10px 0;
+}
+
+.message-content button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.message-content button:hover {
+  background-color: #0056b3;
+}
+
 /* .timer {
   font-family: Arial, sans-serif;
   font-size: 2em;
@@ -136,7 +181,8 @@ button {
 .set-timer-button {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adjust the gap between elements */
+  /* gap: 10px;  */
+  /* Adjust the gap between elements */
   flex-wrap: wrap; /* Allows wrapping to new line if necessary */
 }
 
@@ -151,7 +197,11 @@ button {
 
 @media (max-width: 600px) {
   .set-timer-button input {
-    max-width: 70px; /* Adjust the width for smaller screens */
+    max-width: 50px; /* Adjust the width for smaller screens */
+  }
+  .set-timer-button {
+    font-size: 12px;
+    width: 410px;
   }
 }
 .set-timer-button {
@@ -194,10 +244,10 @@ button:hover {
   text-align: center; /* Center the button horizontally */
 }
 
-.new-game-button {
+#new-game-button {
   /* width: 300px; */
   font-family: Cursed Timer ULiL;
-  padding-inline: 120px;
+  /* padding-inline: 120px; */
   margin-bottom: 20px;
   background-color: #27ae60; /* Different color for start new game button */
 }
@@ -206,7 +256,7 @@ button:hover {
   background-color: #2ecc71; /* Lighter green on hover */
 }
 
-.reset-button {
+#reset-button {
   font-family: Cursed Timer ULiL;
 }
 

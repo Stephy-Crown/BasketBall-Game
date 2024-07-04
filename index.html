@@ -48,18 +48,26 @@
         <div class="set-timer-button">
           <p>Set Timer:</p>
           <input type="text" id="timeInput" placeholder="MM:SS" />
-          <button class="set-timer">Set</button>
-          <button class="start-timer">Start</button>
-          <button class="pause-timer">Pause</button>
+          <button id="set-timer">Set</button>
+
+          <button id="pause-timer">Pause</button>
+          <button id="continue-timer">Continue</button>
+          <button id="reset-timer">Reset</button>
         </div>
         <div class="button-container">
           <div class="start-game-button">
-            <button class="new-game-button">Start Game</button>
+            <button id="new-game-button">Start Game</button>
           </div>
-          <div class="reset-game-button">
-            <button class="reset-button">Reset Game</button>
+          <div id="reset-game-button">
+            <button id="reset-button">Reset Game</button>
           </div>
         </div>
+      </div>
+    </div>
+    <div id="message-modal" class="message-modal">
+      <div class="message-content">
+        <p id="message-text"></p>
+        <button onclick="closeModal()">Close</button>
       </div>
     </div>
     <script src="index.js"></script>

@@ -1,0 +1,258 @@
+body {
+  background: #939ecb;
+  /* background-color: #e0e0e0;  */
+  /* Light grey background */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 100%;
+}
+
+.countdown {
+  font-family: "Cursed Timer ULiL", sans-serif;
+  border: 4px solid #ffffff;
+  border-radius: 5px;
+  width: 300px;
+  height: 30%;
+  background: #080001;
+  text-align: center;
+  margin: 0px auto;
+}
+
+#timer {
+  font-size: 70px;
+  color: greenyellow;
+}
+
+.scoreboard {
+  background-color: #1a2a3a; /* Dark blue background */
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  /* justify-content: space-around; */
+  width: 90%;
+  max-width: 400px;
+  color: #ecf0f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team {
+  text-align: center;
+  flex: 1;
+}
+
+.team-name {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ecf0f1;
+}
+
+#homeScore {
+  font-family: "Cursed Timer ULiL", monospace;
+  font-size: 4em;
+  margin-bottom: 10px;
+  color: #ff0033; /* Red for score */
+  background-color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#guestScore {
+  font-family: "Cursed Timer ULiL", monospace;
+  font-size: 4em;
+  margin-bottom: 10px;
+  color: #ff0033; /* Red for score */
+  background-color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+} */
+
+.btn {
+  border-radius: 5px;
+  width: 45px;
+  border: 2px solid #9aabd8;
+  background: none;
+  color: #9aabd8;
+  margin-block: 10px;
+  font-family: Cursed Timer ULiL;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+button {
+  background-color: #34495e; /* Dark blue buttons */
+  border: none;
+  border-radius: 5px;
+  color: #ecf0f1;
+  font-size: 1em;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.foul {
+  color: #9aabd8;
+  /* margin-block: 10px; */
+  font-family: Cursed Timer ULiL;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+}
+
+/* .timer {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  color: #ecf0f1;
+} */
+
+.set-timer-button {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap between elements */
+  flex-wrap: wrap; /* Allows wrapping to new line if necessary */
+}
+
+.set-timer-button p {
+  margin: 0;
+}
+
+.set-timer-button input {
+  margin: 0 10px;
+  max-width: 100px; /* Set a maximum width for the input */
+}
+
+@media (max-width: 600px) {
+  .set-timer-button input {
+    max-width: 70px; /* Adjust the width for smaller screens */
+  }
+}
+.set-timer-button {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* #set-time-input {
+  margin: 0 10px;
+  padding: 5px;
+  font-size: 1em;
+} */
+
+.set-timer {
+  /* background-color: #d35400;  */
+}
+
+.start-timer {
+  background-color: rgb(4, 33, 4);
+}
+.pause-timer {
+  background-color: #d35400;
+}
+
+.set-timer:hover {
+  background-color: #e67e22; /* Lighter orange on hover */
+}
+
+.timer {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  color: #ecf0f1;
+}
+button:hover {
+  background-color: #3b5998; /* Lighter blue on hover */
+}
+
+.start-game-button {
+  margin-top: 20px;
+  text-align: center; /* Center the button horizontally */
+}
+
+.new-game-button {
+  /* width: 300px; */
+  font-family: Cursed Timer ULiL;
+  padding-inline: 120px;
+  margin-bottom: 20px;
+  background-color: #27ae60; /* Different color for start new game button */
+}
+
+.new-game-button:hover {
+  background-color: #2ecc71; /* Lighter green on hover */
+}
+
+.reset-button {
+  font-family: Cursed Timer ULiL;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust the space between buttons */
+}
+
+.button-container button {
+  padding: 10px 20px; /* Add padding for better appearance */
+}
+
+/* Optional: Adjust buttons for smaller screens */
+@media (max-width: 600px) {
+  .button-container {
+    /* flex-direction: column;  */
+    /* Stack buttons vertically on small screens */
+    align-items: center;
+  }
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+  .scoreboard-container {
+    margin-inline: 10px;
+    /* margin-inline: 20px; */
+    /* flex-direction: column;
+    align-items: center; */
+  }
+}
+/* @media (max-width: 600px) {
+  .scoreboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team {
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  button {
+    margin: 5px 0;
+  }
+} */

@@ -187,9 +187,11 @@ button {
 .set-timer-button {
   display: flex;
   align-items: center;
+  /* width: 450px; */
   /* gap: 10px;  */
   /* Adjust the gap between elements */
-  flex-wrap: wrap; /* Allows wrapping to new line if necessary */
+  /* flex-wrap: wrap;  */
+  /* Allows wrapping to new line if necessary */
 }
 
 .set-timer-button p {
@@ -292,6 +294,13 @@ button:hover {
     /* margin-inline: 30px;
     flex-direction: row; */
     /* align-items: center; */
+  }
+  .scoreboard-container {
+    width: 100%;
+  }
+  .buttons {
+    width: 170px;
+    margin: 0;
   }
 }
 /* @media (max-width: 600px) {

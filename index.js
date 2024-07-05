@@ -2,6 +2,10 @@ let timerInterval;
 let totalTime = 0;
 let lastTimeInput = ""; // To store the last valid time input as a string
 
+let homeScoreEl = document.getElementById("homeScore");
+let guestScoreEl = document.getElementById("guestScore");
+let homeScore = 0;
+let guestScore = 0;
 // document.getElementById("new-game-button").addEventListener("click", () => {
 //   const timeInput = document.getElementById("timeInput").value;
 //   if (!timeInput) {
@@ -190,6 +194,15 @@ document.getElementById("continue-timer").addEventListener("click", () => {
   }
 });
 
+// document.getElementById("reset-button").addEventListener("click", () => {
+//   if (timerInterval) {
+//     clearInterval(timerInterval);
+//   }
+//   remainingTime = initialTime;
+//   const timerElement = document.getElementById("timer");
+//   timerElement.textContent = formatTime(remainingTime);
+// });
+
 document.getElementById("reset-button").addEventListener("click", () => {
   if (timerInterval) {
     clearInterval(timerInterval);
@@ -197,6 +210,12 @@ document.getElementById("reset-button").addEventListener("click", () => {
   remainingTime = initialTime; // Reset to the initial set time
   const timerElement = document.getElementById("timer");
   timerElement.textContent = formatTime(remainingTime);
+
+  // Reset scores
+  homeScore = 0;
+  guestScore = 0;
+  homeScoreEl.textContent = homeScore;
+  guestScoreEl.textContent = guestScore;
 });
 
 document.getElementById("reset-timer").addEventListener("click", () => {
@@ -346,11 +365,6 @@ function guestCounter() {
   let foulElement = document.getElementById("guest-foul");
   foulElement.textContent = parseInt(foulElement.textContent) + 1;
 }
-
-let homeScoreEl = document.getElementById("homeScore");
-let guestScoreEl = document.getElementById("guestScore");
-let homeScore = 0;
-let guestScore = 0;
 
 function incrementScore(team, points) {
   if (team === "home") {

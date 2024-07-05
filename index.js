@@ -290,7 +290,12 @@ function announceWinner() {
       "green"
     );
   } else if (guestScore > homeScore) {
-    showModal(`GUEST WON With ${guestScore} Points!`, "green");
+    showModal(
+      `HOME:${homeScore} 
+      GUEST:${guestScore}
+      GUEST WON With ${guestScore} Points!`,
+      "green"
+    );
   } else {
     showModal("It's a tie", "orange");
   }

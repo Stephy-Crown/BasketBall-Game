@@ -290,7 +290,7 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 600px) {
   .scoreboard {
-    /* margin-inline: 10px; */
+    margin-inline: 5px;
     /* margin-inline: 30px;
     flex-direction: row; */
     /* align-items: center; */

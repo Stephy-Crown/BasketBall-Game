@@ -237,6 +237,17 @@ function incrementScore(team, points) {
     guestScoreEl.textContent = guestScore;
   }
 }
+function OneIncrement(team) {
+  incrementScore(team, 1);
+}
+
+function TwoIncrement(team) {
+  incrementScore(team, 2);
+}
+
+function ThreeIncrement(team) {
+  incrementScore(team, 3);
+}
 
 // Counter for foul button
 let homeCount = 0;
